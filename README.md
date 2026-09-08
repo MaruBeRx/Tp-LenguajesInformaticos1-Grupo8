@@ -1,6 +1,6 @@
 Integrantes: 
 
-Becerra, María
+Becerra María,
 Forti Sánchez, Estefanía
 Garay, Alexis
 López, Olga
