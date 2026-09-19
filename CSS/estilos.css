@@ -1,0 +1,28 @@
+/* Variables */ 
+:root { 
+    --color-Primario: #1b5e1d; 
+    --color-Secundario-Fondo: #e7ffe8;
+   
+
+    --color-primario-texto: #1b5e1d;
+    --color-secundario-texto: #e7ffe8;
+
+    --tipo-fuente-principal: 'Libre Baskerville', serif;
+
+} 
+ 
+/* Reset CSS */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+body {
+    font-family: var(--tipo-fuente-principal);
+    margin: 0;
+    padding: 0;
+    color: var(--color-primario-texto);
+    font-size: 16px;
+    line-height: 1.5;
+}
