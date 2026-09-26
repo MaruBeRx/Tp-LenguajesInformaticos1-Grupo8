@@ -1,28 +1,31 @@
-/* Variables */ 
-:root { 
-    --color-Primario: #1b5e1d; 
-    --color-Secundario-Fondo: #e7ffe8;
-   
+/* VARIABLES CSS */
+:root {
+    /* Colores de fondo */
+    --color-primario: #1b5e1d;
+    --color-secundario-fondo: #e7ffe8;
 
+    /* Colores de texto */
     --color-primario-texto: #1b5e1d;
     --color-secundario-texto: #e7ffe8;
 
+    /* Tipografía */
     --tipo-fuente-principal: 'Libre Baskerville', serif;
+}
 
-} 
- 
-/* Reset CSS */ 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-} 
 
-body {
-    font-family: var(--tipo-fuente-principal);
+/* RESET CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* TIPOGRAFÍA Y ESTILOS GLOBALES */
+body {
+    font-family: var(--tipo-fuente-principal);
     color: var(--color-primario-texto);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
+    padding: 20px;
 }
