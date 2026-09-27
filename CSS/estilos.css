@@ -29,3 +29,178 @@ body {
     line-height: 1.5;
     padding: 20px;
 }
+
+///*
+
+
+/* ENCABEZADO */
+header {
+    background-color: var(--color-primario);
+    color: var(--color-secundario-texto);
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-primario-texto);
+    margin-bottom: 0.5rem;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--color-primario-texto);
+    text-decoration: none;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+main {
+    background-color: var(--color-secundario-fondo);
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+
+/* TÍTULOS */
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* IMÁGENES */
+figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+
+/* ZONAS DE LA CIUDAD */
+section article {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-primario);
+}
+
+
+/* LISTAS */
+section ul {
+    padding-left: 1.5rem;
+}
+
+
+/* DATOS CLAVE */
+dl {
+    padding: 1rem;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1rem;
+}
+
+
+/* INFORMACIÓN TURÍSTICA */
+aside {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-primario);
+}
+
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: var(--color-primario);
+    color: var(--color-secundario-texto);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+figure img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--color-primario);
+}
+
+
+/* FORMULARIO DE CONTACTO */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid var(--color-primario);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-primario);
+    box-sizing: border-box;
+}
+
+.fore-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fore-text a {
+    color: var(--color-primario);
+}
+
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-primario);
+    color: var(--color-secundario-texto);
+    border: none;
+    cursor: pointer;
+}
