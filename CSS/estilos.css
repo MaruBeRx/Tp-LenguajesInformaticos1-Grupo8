@@ -30,9 +30,6 @@ body {
     padding: 20px;
 }
 
-///*
-
-
 /* ENCABEZADO */
 header {
     background-color: var(--color-primario);
@@ -105,7 +102,7 @@ figcaption {
 }
 
 
-/* ZONAS DE LA CIUDAD */
+/* ZONAS DE LA CIUDAD -------------------------------revisar*/
 section article {
     padding: 1rem;
     margin-bottom: 1rem;
