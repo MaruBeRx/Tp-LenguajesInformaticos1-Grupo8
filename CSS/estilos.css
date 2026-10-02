@@ -3,6 +3,8 @@
     /* Colores de fondo */
     --color-primario: #1b5e1d;
     --color-secundario-fondo: #e7ffe8;
+    --color-terciario-fondo: #f7e7ce;
+    --color-cuaternario-fondo: #f0f0f0;
 
     /* Colores de texto */
     --color-primario-texto: #1b5e1d;
@@ -32,8 +34,8 @@ body {
 
 /* ENCABEZADO */
 header {
-    background-color: var(--color-primario);
-    color: var(--color-secundario-texto);
+    background-color: var(--color-cuaternario-fondo);
+    color: var(--color-primario-texto);
     padding: 2rem;
     text-align: center;
 }
@@ -45,6 +47,7 @@ header h1 {
 
 
 /* MENÚ DE NAVEGACIÓN */
+
 nav {
     margin-top: 1.5rem;
 }
@@ -59,9 +62,18 @@ nav ul {
 }
 
 nav a {
-    color: var(--color-primario-texto);
+    color: var(--color-terciario-texto);
     text-decoration: none;
+    padding: 0.6rem 1rem; /*are de enlace mas grande paa q parezca un boton*/
+    border-radius: 10px; /*redonde las esquinas*/
+    transition: 0.3s;
 }
+/*efecto cuando paso el mouse por encima*/
+nav a:hover {
+    background-color: var(--color-primario);
+    color: var(--color-cuaternario-fondo);
+}
+
 
 
 /* CONTENIDO PRINCIPAL */

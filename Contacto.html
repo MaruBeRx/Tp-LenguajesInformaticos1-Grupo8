@@ -3,112 +3,188 @@
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Villa Encanto</title>
-    <link rel="stylesheet" href="css/estilos.css">  
-</head>
-<body>                  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Villa Encanto</title>
+        <link rel="stylesheet" href="css/estilos.css">  
+    </head>
+    <body>                  
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <header>
-        <div class="identidad">
-        <img src="Imagenes/LOGO - Villa encanto.png" alt="Logo de Villa Encanto" width="400">
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <header>
+            <div class="identidad">
+                <img src="Imagenes/LOGO - Villa encanto.png" alt="Logo de Villa Encanto" width="400">
         
         
-    </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Ciudad.html">Ciudad</a></li>
-                <li><a href="Lugares.html">Lugares</a></li>
-                <li><a href="Actividades.html">Actividades</a></li>
-                <li><a href="Contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <form action="procesar_formulario.php" method="POST">
-
-            <h1>Contacto</h1>
-
-            <div class="input-group">
-
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su número de teléfono">
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" cols="30" rows="5" required placeholder="Ingrese su mensaje"></textarea>
-
-                <div class="fore-text">
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Términos y condiciones</a>
-                </div>
-
-            <input class="btn" type="submit" value="Enviar">
             </div>
-        </form>
 
-
-    <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Ciudad.html">Ciudad</a></li>
+                    <li><a href="Lugares.html">Lugares</a></li>
+                    <li><a href="Actividades.html">Actividades</a></li>
+                    <li><a href="Contacto.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
         <h1>Información de contacto en Villa Encanto</h1>
-
-        <!-- INFORMACIÓN GENERAL -->
-        <section>
-            <h2>Información general</h2>
-            <ul>
-                <li><strong>Teléfono de la Municipalidad:</strong> +54921222324</li>
-                <li><strong>Horarios de atención:</strong>
-                    <ul>
-                        <li>Lunes a viernes de 8:00 a 19:00 hs</li>
-                        <li>Sábados de 9:00 a 13:00 hs</li>
-                    </ul>
-                </li>
-                <li><strong>Mail:</strong> villaEncantocentralmunicipal@gmail.com</li>
-            </ul>
-        </section>
-
-        <!-- ACTIVIDADES TURÍSTICAS -->
-        <section>
-            <h2>Actividades turísticas</h2>
-            <ul>
-                <li><strong>Teléfono:</strong> +54921232122</li>
-                <li><strong>Horarios de atención:</strong> Lunes a sábados de 10:00 a 19:00 hs</li>
-                <li><strong>Mail:</strong> villaEncantoturismo@gmail.com</li>
-            </ul>
-        </section>
-
-        <!-- GUÍA TURÍSTICO -->
-        <section>
-            <h2>Guía turístico</h2>
-            <ul>
-                <li><strong>Teléfono:</strong> +54921222122</li>
-                <li><strong>Horarios de atención:</strong> Lunes a sábados de 7:00 a 19:00 hs</li>
-                <li><strong>Mail:</strong> villaEncantoguiaturistica@gmail.com</li>
-            </ul>
-        </section>
-
-        <!-- ALOJAMIENTO -->
-        <section>
-            <h2>Alojamiento</h2>
-            <ul>
-                <li><strong>Teléfono:</strong> +54923222122</li>
-                <li><strong>Horarios de atención:</strong> Lunes a sábados de 7:00 a 19:00 hs</li>
-                <li><strong>Mail:</strong> villaEncantoalojamiento@gmail.com</li>
-            </ul>
-        </section>
-    </main>
-
-        
-        
     
-</body>
+        <main>
+        
+            <!-- INFORMACIÓN GENERAL -->
+            <section>
+                <h2>Información general</h2>
+
+                <ul>
+                    <li>
+                        <strong>Teléfono de la Municipalidad:</strong> +54921222324
+                        <a href="tel:+54921222324">tel:+54921222324</a>
+                    </li>
+                    <li>
+                        <strong>Horarios de atención:</strong>
+                        Lunes a viernes de 8:00 a 19:00 hs
+                        Sábados de 9:00 a 13:00 hs
+                        
+                    </li>
+
+                    <li>
+                        <strong>Mail de la Municipalidad:</strong>
+                        <a href="mailto:villaEncantocentralmunicipal@gmail.com">Envíanos un correo</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ACTIVIDADES TURÍSTICAS -->
+            <section>
+                <h2>Actividades turísticas</h2>
+
+                <ul>
+                    <li>
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+54921232122">+54921232122</a>
+                    </li>
+
+                    <li>
+                        <strong>Horarios de atención:</strong>
+                        Lunes a sábados de 10:00 a 19:00 hs
+                    </li>
+
+                    <li>
+                        <strong>Mail:</strong>
+                        <a href="mailto:villaEncantoturismo@gmail.com">
+                            villaEncantoturismo@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- GUÍA TURÍSTICO -->
+            <section>
+                <h2>Guía turístico</h2>
+
+                <ul>
+                    <li>
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+54921222122">+54921222122</a>
+                    </li>
+
+                    <li>
+                        <strong>Horarios de atención:</strong>
+                        Lunes a sábados de 7:00 a 19:00 hs
+                    </li>
+
+                    <li>
+                        <strong>Mail:</strong>
+                        <a href="mailto:villaEncantoguiaturistica@gmail.com">
+                            villaEncantoguiaturistica@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- ALOJAMIENTO -->
+            <section>
+                <h2>Alojamiento</h2>
+
+                <ul>
+                    <li>
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+54923222122">+54923222122</a>
+                    </li>
+
+                    <li>
+                        <strong>Horarios de atención:</strong>
+                        Lunes a sábados de 7:00 a 19:00 hs
+                    </li>
+
+                    <li>
+                        <strong>Mail:</strong>
+                        <a href="mailto:villaEncantoalojamiento@gmail.com">
+                            villaEncantoalojamiento@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- FORMULARIO DE CONTACTO -->
+            <form action="procesar_formulario.php" method="POST">
+
+                <div class="input-group">
+
+                    <h2>Si tenés dudas o sugerencias, ¡te leemos!</h2>
+
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        placeholder="Ingrese su nombre"
+                    >
+
+                    <label for="email">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Ingrese su correo electrónico"
+                    >
+
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        required
+                        placeholder="Ingrese su número de teléfono"
+                    >
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea
+                id="mensaje"
+                name="mensaje"
+                cols="30"
+                rows="5"
+                required
+                placeholder="Ingrese su mensaje"
+            ></textarea>
+
+                    <div class="fore-text">
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Términos y condiciones</a>
+                    </div>
+
+                    <input class="btn" type="submit" value="Enviar">
+
+                </div>
+            </form>
+        </main>
+    
+    </body>
 </html>
