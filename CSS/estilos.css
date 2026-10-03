@@ -9,6 +9,7 @@
     /* Colores de texto */
     --color-primario-texto: #1b5e1d;
     --color-secundario-texto: #e7ffe8;
+    
 
     /* Tipografía */
     --tipo-fuente-principal: 'Libre Baskerville', serif;
@@ -29,6 +30,9 @@ body {
     color: var(--color-primario-texto);
     font-size: 1rem;
     line-height: 1.5;
+    background-color: var(--color-fondo);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -49,7 +53,7 @@ header h1 {
 /* MENÚ DE NAVEGACIÓN */
 
 nav {
-    margin-top: 1.5rem;
+    margin-top: 1.5rem 0;
 }
 
 nav ul {
@@ -62,7 +66,7 @@ nav ul {
 }
 
 nav a {
-    color: var(--color-terciario-texto);
+    color: var(--color-primario-texto);
     text-decoration: none;
     padding: 0.6rem 1rem; /*are de enlace mas grande paa q parezca un boton*/
     border-radius: 10px; /*redonde las esquinas*/
