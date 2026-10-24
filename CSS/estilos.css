@@ -44,9 +44,8 @@ header {
     background-color: var(--color-secundario-fondo);
     padding: 1rem;
     text-align: left;
-    
 
-    border-radius: 40px;
+    border-radius: 60px;
 }
 
 /* MENÚ DE NAVEGACIÓN */
@@ -87,7 +86,7 @@ nav a:hover {
 
 /*imagen fondo index*/
 .hero {
-    min-height: 400px;
+    min-height: 100px;
     background-image: url("../Imagenes/paisaje-ciudad.avif");
     background-size: cover;
     background-position: center;
@@ -100,6 +99,7 @@ nav a:hover {
 
     margin: 0;
 }
+
 /*titulo del hero*/
 .hero h1 {
     font-size: 3.5rem;
@@ -144,6 +144,53 @@ nav a:hover {
     padding: 2rem;
 }
 
+/* hero de las actividades*/
+.hero-actividades {
+    min-height: 100px;
+    background-image: url("../Imagenes/muelle_viejo_pesca_turistica.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    color: var(--color-secundario-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+/*titulo del hero*/
+.hero-actividades h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+/*eslogan */
+.hero-actividades p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+
+.hero-actividades a:hover {
+    transform: translateY(-3px);
+}
+.hero-actividades::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
+}
+
+.hero-actividades-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+}
+
 /* CONTENIDO PRINCIPAL */
 main {
     background-color: var(--color-primario-fondo);
@@ -164,7 +211,7 @@ main {
 /* Contenido del footer */
 
 .footer-contenido {
-    display:;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     max-width: 1200px;
