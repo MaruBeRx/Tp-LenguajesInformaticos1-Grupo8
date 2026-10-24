@@ -1,175 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades - Villa Encanto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+        <title>Actividades - Villa Encanto</title>
 
-    <header>
+        <meta name="description" content="Conocé Villa Encanto, una ciudad rodeada de naturaleza, cultura, espacios recreativos y lugares únicos para descubrir.">
 
-        <h1>Actividades</h1>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-        <nav>
-            <a href="Index.html">Inicio</a>
-            <a href="Ciudad.html">Ciudad</a>
-            <a href="Lugares.html">Lugares</a>
-            <a href="Actividades.html">Actividades</a>
-            <a href="Contacto.html">Contacto</a>
-        </nav>
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
 
-    </header>
+    <body>
 
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="Encabezado-logo">
+                <img
+                    src="Imagenes/LOGO - Villa encanto.png"
+                    alt="Logo de Villa Encanto"
+                    width="200"
+                >
+            </div>
 
-    <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ciudad.html">Ciudad</a></li>
+                    <li><a href="lugares.html">Lugares</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <p>
-            Descubre las mejores experiencias al aire libre combinando
-            el deporte, la naturaleza y la cultura local.
-        </p>
+        <main>
 
+            <!-- HERO DE ACTIVIDADES -->
+            <section class="hero-actividades">
+                <div class="hero-content">
+                    <h1>Actividades en Villa Encanto</h1>
 
-        <section>
+                    <p>
+                        <em>
+                            Explorá las mejores experiencias al aire libre combinando
+                            el deporte, la naturaleza y la cultura local.
+                        </em>
+                    </p>
+                </div>
+            </section>
 
-            <h2>Aventuras y Deportes Disponibles</h2>
+            <!-- ACTIVIDADES DISPONIBLES -->
+            <section id="actividades-disponibles">
 
+                <h2>Aventuras y Deportes Disponibles</h2>
 
-            <h3>1. Senderismo Guiado y Autoguiado</h3>
+                <!-- SENDERISMO -->
+                <article class="actividad">
+                    <div class="imagen/actividades">
+                        <p>
+                            <strong>Descripción:</strong>
+                            Caminatas por senderos naturales diseñados para conectar
+                            con la flora y fauna autóctona de la región.
+                        </p>
+                    </div>
+                    <div class="descripcion/actividades">
+                        <p>
+                            <strong>Ubicación / Zona:</strong>
+                            Zona de la Reserva Natural y faldeos de las sierras.
+                        </p>
 
-            <img src="DESC.IMAGENES/foto_senderismo.jpg"
-                 alt="Personas haciendo caminata con mochilas por senderos naturales de montaña"
-                 width="400">
+                        <p><strong>Qué se puede hacer:</strong></p>
 
-            <p>
-                <strong>Descripción:</strong>
-                Caminatas por senderos naturales diseñados para conectar
-                con la flora y fauna autóctona de la región.
-            </p>
+                        <ul>
+                            <li>Fotografía de paisajes.</li>
+                            <li>Avistamiento de aves locales.</li>
+                            <li>Caminatas de baja dificultad.</li>
+                            <li>Caminatas de media dificultad.</li>
+                            <li>Caminatas de alta dificultad.</li>
+                        </ul>
 
-            <p>
-                <strong>Ubicación / Zona:</strong>
-                Zona de la Reserva Natural y faldeos de las sierras.
-            </p>
+                        <p>
+                            <strong>Por qué se recomienda:</strong>
+                            Es una excelente manera de desconectar de la rutina urbana.
+                            Además, los fines de semana se organizan
+                            <strong>"Caminatas Nocturnas Lunares"</strong>, donde
+                            astrónomos locales explican las constelaciones.
+                        </p>
+                    </div>
+                
+                    <!-- KAYAK -->
+                
+                    <div
+                        class="imagen/actividad"
+                        <h3
+                    >Travesías en Kayak</h3>
 
-            <p>
-                <strong>Qué se puede hacer:</strong>
-            </p>
+                        <img
+                            src="../Imagenes\travesias_kayak_familiar_.jpg"
+                            alt="Grupo de personas remando en kayaks por un río rodeado de vegetación"
+                            width="400"
+                        >
+                    </div>
+                    <div
+                        <p
+                    >
+                        <strong>Descripción:</strong>
+                        Recorridos en kayak por el río que atraviesa la ciudad,
+                        con opciones para principiantes y expertos.
+                        </p>
 
-            <ul>
-                <li>Fotografía de paisajes.</li>
-                <li>Avistamiento de aves locales.</li>
-                <li>Caminatas de baja dificultad.</li>
-                <li>Caminatas de media dificultad.</li>
-                <li>Caminatas de alta dificultad.</li>
-            </ul>
+                        <p>
+                            <strong>Ubicación / Zona:</strong>
+                            Río Encanto y sus afluentes.
+                        </p>
 
-            <p>
-                <strong>Por qué se recomienda:</strong>
-                Es una excelente manera de desconectar de la rutina urbana.
-                Además, los fines de semana se organizan
-                <strong>"Caminatas Nocturnas Lunares"</strong>, donde
-                astrónomos locales explican las constelaciones.
-            </p>
+                        <p><strong>Qué se puede hacer:</strong></p>
 
+                        <ul>
+                            <li>Alquiler de kayaks individuales y dobles.</li>
+                            <li>Clases de remo para principiantes.</li>
+                            <li>Excursiones guiadas por la flora y fauna del río.</li>
+                        </ul>
 
-            <h3>2. Travesías en Kayak</h3>
+                        <p>
+                            <strong>Por qué se recomienda:</strong>
+                            Es una actividad que combina ejercicio físico con
+                            contacto directo con la naturaleza. Además, se realizan
+                            eventos especiales como el
+                            <strong>"Festival del Kayak Nocturno"</strong>, donde los
+                            participantes navegan iluminados por luces LED.
+                        </p>
+                    </div>
 
-            <img src="DESC.IMAGENES\travesias_kayak_familiar_.jpg"
-                 alt="Personas navegando en kayaks de travesía frente a las montañas"
-                 width="400">
+                    <!-- PESCA DEPORTIVA -->
+                    <div class="imagen/actividad">
+                        <h3>Pesca Deportiva y Turística</h3>
 
-            <p>
-                <strong>Descripción:</strong>
-                Recorridos acuáticos individuales o en grupo para explorar
-                los espejos de agua desde una perspectiva diferente.
-            </p>
+                        <img
+                            src="../Imagenes\muelle_viejo_pesca_turistica.jpg
+                        "
+                            alt="Hombre practicando pesca deportiva con mosca en un lago despejado"
+                            width="400"
+                        >
 
-            <p>
-                <strong>Ubicación / Zona:</strong>
-                Zona del Lago Municipal y Costanera.
-            </p>
+                        <p>
+                            <strong>Descripción:</strong>
+                            Una actividad relajante bajo la modalidad de
+                            <strong>"pesca con devolución"</strong> para preservar
+                            el ecosistema local.
+                        </p>
 
-            <p>
-                <strong>Qué se puede hacer:</strong>
-            </p>
+                        <p>
+                            <strong>Ubicación / Zona:</strong>
+                            Muelle Viejo y sector norte del río.
+                        </p>
 
-            <ol>
-                <li>Alquiler de botes.</li>
-                <li>Cursos rápidos para principiantes.</li>
-                <li>Paseos en kayak al atardecer.</li>
-            </ol>
+                        <p><strong>Qué se puede hacer:</strong></p>
 
-            <p>
-                <strong>Por qué se recomienda:</strong>
-                Ofrece vistas hermosas y tranquilas de la ciudad durante
-                la puesta de sol. Durante el verano se realiza el
-                <strong>"Festival del Agua"</strong>, un evento deportivo
-                y musical con carreras de kayak y bandas en vivo en la playa.
-            </p>
+                        <ul>
+                            <li>Alquiler de equipos de pesca.</li>
+                            <li>Contratación de guías lancheros.</li>
+                            <li>Talleres de pesca con mosca.</li>
+                        </ul>
 
+                        <p>
+                            <strong>Por qué se recomienda:</strong>
+                            Es una actividad ideal para compartir en familia en un
+                            entorno tranquilo. Anualmente se celebra el
+                            <strong>"Torneo del Pez de Plata"</strong>, una propuesta
+                            cultural y gastronómica donde la comunidad se reúne a
+                            orillas del río con ferias de artesanos y puestos de comida.
+                        </p>
+                    </div>
+                </article>
 
-            <h3>3. Pesca Deportiva y Turística</h3>
+            </section>
 
-            <img src="DESC.IMAGENES\muelle_viejo_pesca_turistica.jpg"
-                 alt="Hombre practicando pesca deportiva con mosca en un lago despejado"
-                 width="400">
+            <!-- INFORMACIÓN PARA EL VISITANTE -->
+            <section class="informacion-visitante">
+                <p>
+                    <strong>Información importante para el visitante:</strong>
+                    Recordá llevar siempre hidratación, protector solar adecuado
+                    y respetar los senderos señalizados para preservar el
+                    ecosistema de Villa Encanto.
+                </p>
+            </section>
 
-            <p>
-                <strong>Descripción:</strong>
-                Una actividad relajante bajo la modalidad de
-                <strong>"pesca con devolución"</strong> para preservar
-                el ecosistema local.
-            </p>
+        </main>
 
-            <p>
-                <strong>Ubicación / Zona:</strong>
-                Muelle Viejo y sector norte del Río.
-            </p>
+        <!-- PIE DE PÁGINA -->
+        <footer id="pie-pagina">
 
-            <p>
-                <strong>Qué se puede hacer:</strong>
-            </p>
+            <div class="footer-contenido">
 
-            <ul>
-                <li>Alquiler de equipos de pesca.</li>
-                <li>Contratación de guías lancheros.</li>
-                <li>Talleres de pesca con mosca.</li>
-            </ul>
+                <!-- IDENTIDAD -->
+                <div class="footer-identidad">
+                    <img
+                        src="Imagenes/isologo-beige.png"
+                        alt="Isologo de Villa Encanto"
+                        width="50"
+                    >
 
-            <p>
-                <strong>Por qué se recomienda:</strong>
-                Es una actividad ideal para compartir en familia en un
-                entorno tranquilo. Anualmente se celebra el
-                <strong>"Torneo del Pez de Plata"</strong>, una propuesta
-                cultural y gastronómica donde la comunidad se reúne a
-                orillas del río con ferias de artesanos y puestos de comida.
-            </p>
+                    <h2>Villa Encanto</h2>
+                    <p>Donde la ciudad abraza a la naturaleza.</p>
+                </div>
 
-        </section>
+                <!-- ENLACES -->
+                <div class="footer-enlaces">
+                    <h3>Explorá la ciudad</h3>
 
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="ciudad.html">Nuestra ciudad</a></li>
+                        <li><a href="lugares.html">Lugares turísticos</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
 
-        <p>
-            <strong>Información Importante para el Visitante:</strong>
-            Recuerda llevar siempre hidratación, protector solar adecuado
-            y respetar los senderos señalizados para preservar el
-            ecosistema de Villa Encanto.
-        </p>
+                <!-- CONTACTO -->
+                <div class="footer-contacto">
+                    <h3>Contacto</h3>
+                    <p>Correo: info@villaencanto.com</p>
+                    <p>Ubicación: Villa Encanto</p>
+                </div>
 
+                <!-- REDES SOCIALES -->
+                <div class="footer-redes">
+                    <h3>Seguinos en redes</h3>
 
-    </main>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Instagram
+                            </a>
+                        </li>
 
+                        <li>
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Facebook
+                            </a>
+                        </li>
 
-    <footer>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <p>
-            Copyright 2026 Villa Encanto - Guía Turística Oficial.
-        </p>
+            </div>
 
-    </footer>
+            <!-- DERECHOS -->
+            <div class="footer-derechos">
+                <p>&copy; 2026 Villa Encanto. Todos los derechos reservados.</p>
+            </div>
 
-</body>
+        </footer>
 
+    </body>
 </html>
+```

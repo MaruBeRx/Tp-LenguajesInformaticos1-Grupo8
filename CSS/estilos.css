@@ -1,20 +1,21 @@
 /* VARIABLES CSS */
 :root {
     /* Colores de fondo */
-    --color-primario: #1b5e1d;
-    --color-secundario-fondo: #e7ffe8;
-    --color-terciario-fondo: #f7e7ce;
-    --color-cuaternario-fondo: #f0f0f0;
+    --color-primario-fondo: #f5f3e9;
+    --color-secundario-fondo: #def5d7;
+    --color-terciario-fondo: #d6b56d;
+    --color-cuaternario-fondo: #1b5e1d;
+    /*botones */
+    --color-boton-fondo: #1b5e1d;
 
     /* Colores de texto */
-    --color-primario-texto: #1b5e1d;
-    --color-secundario-texto: #e7ffe8;
-    
+    --color-primario-texto: #1b4332;
+    --color-secundario-texto: #f5f3e9;
+    --color-terciario-texto: #d6b56d;
 
     /* Tipografía */
-    --tipo-fuente-principal: 'Libre Baskerville', serif;
+    --tipo-fuente-principal: "Libre Baskerville", serif;
 }
-
 
 /* RESET CSS */
 * {
@@ -23,42 +24,47 @@
     box-sizing: border-box;
 }
 
-
 /* TIPOGRAFÍA Y ESTILOS GLOBALES */
 body {
     font-family: var(--tipo-fuente-principal);
     color: var(--color-primario-texto);
     font-size: 1rem;
+    background-color: var(--color-primario-fondo);
     line-height: 1.5;
-    background-color: var(--color-fondo);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* ENCABEZADO */
 header {
-    background-color: var(--color-cuaternario-fondo);
-    color: var(--color-primario-texto);
-    padding: 2rem;
-    text-align: center;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-header h1 {
-    color: var(--color-primario-texto);
-    margin-bottom: 0.5rem;
-}
+    background-color: var(--color-secundario-fondo);
+    padding: 1rem;
+    text-align: left;
 
+    border-radius: 60px;
+}
 
 /* MENÚ DE NAVEGACIÓN */
 
 nav {
     margin-top: 1.5rem 0;
+    order: 1;
+}
+.encabezado-logo {
+    order: 2;
 }
 
+.encabezado-logo img {
+    max-width: 100%;
+    height: auto;
+}
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap: 1.5rem;
     list-style: none;
@@ -74,23 +80,216 @@ nav a {
 }
 /*efecto cuando paso el mouse por encima*/
 nav a:hover {
-    background-color: var(--color-primario);
-    color: var(--color-cuaternario-fondo);
+    background-color: var(--color-cuaternario-fondo);
+    color: var(--color-secundario-texto);
+}
+
+/*imagen fondo index*/
+.hero {
+    min-height: 100px;
+    background-image: url("../Imagenes/paisaje-ciudad.avif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: var(--color-secundario-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+/*titulo del hero*/
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+/*eslogan */
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/*boton de conce villa encanto*/
+.hero a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+
+    background-color: var(--color-cuaternario-fondo);
+    color: var(--color-secundario-texto);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    transform: translateY(-3px);
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* hero de las actividades*/
+.hero-actividades {
+    min-height: 100px;
+    background-image: url("../Imagenes/muelle_viejo_pesca_turistica.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    color: var(--color-secundario-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+/*titulo del hero*/
+.hero-actividades h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+/*eslogan */
+.hero-actividades p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 
 
+.hero-actividades a:hover {
+    transform: translateY(-3px);
+}
+.hero-actividades::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
+}
+
+.hero-actividades-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+}
+
 /* CONTENIDO PRINCIPAL */
 main {
-    background-color: var(--color-secundario-fondo);
-    padding: 2rem;
+    background-color: var(--color-primario-fondo);
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: NONE;
+    margin: 0 AUTO;
+}
+
+/* footer */
+
+#pie-pagina {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    padding: 35px 40px 15px;
+}
+
+/* Contenido del footer */
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Identidad */
+
+.footer-identidad img {
+    margin-bottom: 10px;
+}
+
+.footer-identidad h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-identidad p {
+    line-height: 1.6;
+}
+
+/* Títulos */
+
+#pie-pagina h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Listas */
+
+#pie-pagina ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pie-pagina li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+
+#pie-pagina a {
+    color: #e7ffe8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#pie-pagina a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Contacto */
+
+.footer-contacto p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Derechos de autor */
+
+.footer-derechos {
+    border-top: 1px solid #e7ffe8;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footer-derechos p {
+    margin: 0;
 }
 
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
 }
-
 
 /* TÍTULOS */
 h2 {
@@ -100,7 +299,6 @@ h2 {
 h3 {
     margin-bottom: 0.5rem;
 }
-
 
 /* IMÁGENES */
 figure {
@@ -117,11 +315,9 @@ figure img {
     border: 6px solid var(--color-primario);
 }
 
-
 figcaption {
     margin-top: 0.5rem;
 }
-
 
 /* ZONAS DE LA CIUDAD -------------------------------revisar*/
 section article {
@@ -130,12 +326,10 @@ section article {
     border: 1px solid var(--color-primario);
 }
 
-
 /* LISTAS */
 section ul {
     padding-left: 1.5rem;
 }
-
 
 /* DATOS CLAVE */
 dl {
@@ -151,24 +345,12 @@ dd {
     margin-left: 1rem;
 }
 
-
 /* INFORMACIÓN TURÍSTICA */
 aside {
     padding: 1.5rem;
     margin-bottom: 2rem;
     border: 1px solid var(--color-primario);
 }
-
-
-/* PIE DE PÁGINA */
-footer {
-    background-color: var(--color-primario);
-    color: var(--color-secundario-texto);
-    padding: 1.5rem;
-    text-align: center;
-}
-
-
 
 /* FORMULARIO DE CONTACTO */
 form {
@@ -216,21 +398,22 @@ form h2 {
     border: none;
     cursor: pointer;
 }
- table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1.5rem 0;
- }
+}
 
- th, td {
+th,
+td {
     border: 1px solid var(--color-primario);
     padding: 0.75rem;
     text-align: left;
- }
- thead {
-    background-color: var(--color-primario);    
- }
- 
- tbody tr:nth-child(even) {
+}
+thead {
+    background-color: var(--color-primario);
+}
+
+tbody tr:nth-child(even) {
     background-color: var(--color-secundario-fondo);
- }
+}
