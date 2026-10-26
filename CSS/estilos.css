@@ -312,7 +312,11 @@ figure img {
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 6px solid var(--color-primario);
+    border-radius: 20px;
+}
+
+main img {
+    border-radius: 15px;
 }
 
 figcaption {
@@ -331,19 +335,60 @@ section ul {
     padding-left: 1.5rem;
 }
 
-/* DATOS CLAVE */
-dl {
-    padding: 1rem;
+
+
+/* DATOS CLAVE: TARJETA LATERAL */
+.pagina-ciudad main section aside.datos-clave {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border: none;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem 0 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-dt {
+.pagina-ciudad .datos-clave h2 {
+    color: #e7ffe8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pagina-ciudad .datos-clave dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    padding: 0;
+}
+
+.pagina-ciudad .datos-clave dt {
+    color: #e7ffe8;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
-dd {
-    margin-left: 1rem;
+.pagina-ciudad .datos-clave dd {
+    color: #e7ffe8;
+    margin: 0.25rem 0 0;
 }
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .pagina-ciudad main section aside.datos-clave {
+        max-width: 100%;
+        margin: 1.5rem auto;
+        padding: 1.25rem;
+    }
+
+    .pagina-ciudad .datos-clave dl {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 /* INFORMACIÓN TURÍSTICA */
 aside {
@@ -386,9 +431,7 @@ form h2 {
     margin-top: 1rem;
 }
 
-.fore-text a {
-    color: var(--color-primario);
-}
+
 
 .btn {
     margin-top: 1.5rem;
@@ -416,4 +459,34 @@ thead {
 
 tbody tr:nth-child(even) {
     background-color: var(--color-secundario-fondo);
+ }
+
+ main section aside.datos-clave {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border: 2px solid #e7ffe8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main section aside.datos-clave h2 {
+    color: #e7ffe8;
+    margin-bottom: 1rem;
+}
+
+main section aside.datos-clave dt {
+    color: #e7ffe8;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+main section aside.datos-clave dd {
+    color: #e7ffe8;
+    margin-left: 1rem;
+}
+
+
+/* =====================================
+   ESTILO EXCLUSIVO DE CIUDAD.HTML
 }
