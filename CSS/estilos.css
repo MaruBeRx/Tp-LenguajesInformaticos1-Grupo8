@@ -101,7 +101,11 @@ figure img {
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 6px solid var(--color-primario);
+    border-radius: 20px;
+}
+
+main img {
+    border-radius: 15px;
 }
 
 
@@ -124,19 +128,58 @@ section ul {
 }
 
 
-/* DATOS CLAVE */
-dl {
-    padding: 1rem;
+
+/* DATOS CLAVE: TARJETA LATERAL */
+.pagina-ciudad main section aside.datos-clave {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border: none;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem 0 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-dt {
+.pagina-ciudad .datos-clave h2 {
+    color: #e7ffe8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pagina-ciudad .datos-clave dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    padding: 0;
+}
+
+.pagina-ciudad .datos-clave dt {
+    color: #e7ffe8;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
-dd {
-    margin-left: 1rem;
+.pagina-ciudad .datos-clave dd {
+    color: #e7ffe8;
+    margin: 0.25rem 0 0;
 }
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .pagina-ciudad main section aside.datos-clave {
+        max-width: 100%;
+        margin: 1.5rem auto;
+        padding: 1.25rem;
+    }
+
+    .pagina-ciudad .datos-clave dl {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 /* INFORMACIÓN TURÍSTICA */
@@ -191,9 +234,7 @@ form h2 {
     margin-top: 1rem;
 }
 
-.fore-text a {
-    color: var(--color-primario);
-}
+
 
 .btn {
     margin-top: 1.5rem;
@@ -221,3 +262,242 @@ form h2 {
  tbody tr:nth-child(even) {
     background-color: var(--color-secundario-fondo);
  }
+
+ main section aside.datos-clave {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border: 2px solid #e7ffe8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main section aside.datos-clave h2 {
+    color: #e7ffe8;
+    margin-bottom: 1rem;
+}
+
+main section aside.datos-clave dt {
+    color: #e7ffe8;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+main section aside.datos-clave dd {
+    color: #e7ffe8;
+    margin-left: 1rem;
+}
+
+
+/* =====================================
+   ESTILO EXCLUSIVO DE CIUDAD.HTML
+===================================== */
+
+body.pagina-ciudad {
+    padding: 0;
+    background-color: #f7f5eb;
+    color: #243b2b;
+}
+
+.pagina-ciudad main {
+    background-color: #f7f5eb;
+}
+
+.pagina-ciudad main > section {
+    padding: 2.5rem 6%;
+    margin: 0;
+}
+
+.pagina-ciudad main > section:nth-of-type(even) {
+    background-color: #e9f0e5;
+}
+
+.pagina-ciudad h2,
+.pagina-ciudad h3 {
+    color: #1b5e1d;
+}
+
+.pagina-ciudad figure img {
+    border: none;
+    border-radius: 15px;
+}
+
+.pagina-ciudad main section article {
+    background-color: #e9f0e5;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.pagina-ciudad main section aside.datos-clave {
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.pagina-ciudad aside.datos-clave h2,
+.pagina-ciudad aside.datos-clave dt,
+.pagina-ciudad aside.datos-clave dd {
+    color: #e7ffe8;
+}
+
+
+/* =====================================
+   ESTILO EXCLUSIVO DE CONTACTO.HTML
+===================================== */
+
+body.pagina-contacto {
+    padding: 0;
+    background-color: #f7f5eb;
+    color: #243b2b;
+}
+
+.pagina-contacto form {
+    max-width: 650px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #d5e3d2;
+    border-radius: 15px;
+}
+
+.pagina-contacto form h1 {
+    color: #1b5e1d;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pagina-contacto .input-group {
+    gap: 0.7rem;
+}
+
+.pagina-contacto .input-group input,
+.pagina-contacto .input-group textarea {
+    padding: 0.85rem;
+    font: inherit;
+    border: 1px solid #b6cbb3;
+    border-radius: 8px;
+    background-color: #f7f9f4;
+}
+
+.pagina-contacto .input-group input:focus,
+.pagina-contacto .input-group textarea:focus {
+    outline: 2px solid #1b5e1d;
+    outline-offset: 2px;
+}
+
+.pagina-contacto .fore-text a {
+    color: #1b5e1d;
+}
+
+.pagina-contacto .btn {
+    align-self: flex-start;
+    border-radius: 30px;
+    padding: 0.85rem 1.8rem;
+    font: inherit;
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+}
+
+.pagina-contacto .btn:hover {
+    background-color: #124719;
+}
+
+.pagina-contacto main {
+    background-color: #f7f5eb;
+}
+
+.pagina-contacto main section {
+    background-color: #e9f0e5;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.pagina-contacto main h1,
+.pagina-contacto main h2 {
+    color: #1b5e1d;
+}
+
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 600px) {
+    .pagina-ciudad main > section {
+        padding: 1.5rem 5%;
+    }
+
+    .pagina-contacto form {
+        margin: 1.5rem 5%;
+        padding: 1.25rem;
+    }
+
+    .pagina-contacto .fore-text {
+        flex-direction: column;
+    }
+}
+
+
+/* COSTUMBRES Y DATOS CLAVE LADO A LADO */
+.pagina-ciudad main > section.costumbres-datos {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem 6%;
+    background-color: #f7f5eb;
+}
+
+.pagina-ciudad .texto-costumbres p {
+    margin-bottom: 1rem;
+}
+
+.pagina-ciudad main section aside.datos-clave {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.75rem;
+    background-color: #1b5e1d;
+    color: #e7ffe8;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.pagina-ciudad .datos-clave h2 {
+    color: #e7ffe8;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.pagina-ciudad .datos-clave dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.25rem;
+    padding: 0;
+}
+
+.pagina-ciudad .datos-clave dt {
+    color: #e7ffe8;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.pagina-ciudad .datos-clave dd {
+    color: #e7ffe8;
+    margin: 0.2rem 0 0;
+    overflow-wrap: anywhere;
+}
+
+/* TABLETS Y CELULARES */
+@media (max-width: 760px) {
+    .pagina-ciudad main > section.costumbres-datos {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 5%;
+    }
+
+    .pagina-ciudad .datos-clave dl {
+        grid-template-columns: 1fr;
+    }
+}
