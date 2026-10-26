@@ -43,7 +43,7 @@ header {
 
     background-color: var(--color-secundario-fondo);
     padding: 1rem;
-    text-align: left;
+    
 
     border-radius: 60px;
 }
@@ -51,22 +51,25 @@ header {
 /* MENÚ DE NAVEGACIÓN */
 
 nav {
-    margin-top: 1.5rem 0;
-    order: 1;
+    margin-top: 0;
+    order: 2;
 }
 .encabezado-logo {
-    order: 2;
+    order: 1;
+    flex-shrink: 0;
 }
 
 .encabezado-logo img {
-    max-width: 100%;
+    width: 300px;
     height: auto;
 }
+
+
 nav ul {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5em;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -203,8 +206,8 @@ main {
 /* footer */
 
 #pie-pagina {
-    background-color: #1b5e1d;
-    color: #e7ffe8;
+    background-color:var(--color-cuaternario-fondo);
+    color: var(--color-secundario-texto);
     padding: 35px 40px 15px;
 }
 
@@ -243,7 +246,7 @@ main {
 /* Listas */
 
 #pie-pagina ul {
-    list-style: none;
+    list-style: disc; /* Cambiado de "none" a "disc" para mostrar viñetas */
     padding: 0;
     margin: 0;
 }
@@ -255,13 +258,13 @@ main {
 /* Enlaces */
 
 #pie-pagina a {
-    color: #e7ffe8;
+    color: var(--color-secundario-texto);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 #pie-pagina a:hover {
-    color: #ffffff;
+    color: var(--color-secundario-texto);
     text-decoration: underline;
 }
 
@@ -275,7 +278,7 @@ main {
 /* Derechos de autor */
 
 .footer-derechos {
-    border-top: 1px solid #e7ffe8;
+    border-top: 1px solid var(--color-secundario-texto);
     text-align: center;
     margin-top: 30px;
     padding-top: 15px;
@@ -285,6 +288,22 @@ main {
 .footer-derechos p {
     margin: 0;
 }
+
+.botoncito a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+
+    background-color: var(--color-cuaternario-fondo);
+    color: var(--color-secundario-texto);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+
+    transition: 0.3s;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
 
 section {
     margin-bottom: 2rem;
